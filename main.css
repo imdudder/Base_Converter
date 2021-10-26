@@ -1,0 +1,49 @@
+.containAll {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.jumbotron {
+  
+  text-align: center;
+  background: none;
+}
+
+.topbar {
+  background-color: #1477B2;
+  padding: 2rem;
+}
+
+h1.topbar-header {
+  color: #eeeee4;
+}
+
+p.topbar-text {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.bin-dec-container {
+  padding: 40px 0px 20px;
+}
+
+.card-header.converter-header {
+  background-color: coral;
+}
+
+.converter-item {
+  background-color:#f6f6f6;
+}
+
+.bin-to-dec-form-container {
+  padding-top: 5px;
+}
+
+.input {
+  float: left;
+  margin-right: 50px;
+}
+
+.output {
+  float: left;
+}
