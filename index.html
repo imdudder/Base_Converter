@@ -33,14 +33,14 @@
     </div>
 
     <!--Binary and Decimal Section-->
-    <div class="bin-dec-container">
+    <div class="converter-container">
       <div class="row">
         <div class="col"></div>
         <div class="col-sm-12 col-md-6">
           <!--Binary and Decimal Card-->
           <div class="card converter-card">
             <div class="card-header converter-header">
-              <h4 class="card-title">Binary to Decimal</h4>
+              <h4 class="card-title">Binary and Decimal</h4>
             </div>
             <ul class="list-group list-group-flush">
               <!--Binary to Decimal-->
@@ -48,13 +48,13 @@
                 <h5>Binary to Decimal</h5>
                 <form id="bin-to-dec-form">
                   <fieldset class="input">
-                    <label for="binInput">Binary Number</label><br>
-                    <input type="text" id="binInput">
+                    <label for="binToDecInput">Binary Number</label><br>
+                    <input type="text" id="binToDecInput">
                     <input type="submit" value="Convert">
                   </fieldset>
                   <fieldset class="output">
-                    <label for="decOutput">Decimal Number</label><br>
-                    <input type="text" id="decOutput" readonly="readonly"></input>
+                    <label for="binToDecOutput">Decimal Number</label><br>
+                    <input type="text" id="binToDecOutput" readonly="readonly"></input>
                   </fieldset>
                 </form>
               </li>
@@ -64,25 +64,73 @@
                 <h5>Decimal to Binary</h5>
                 <form id="dec-to-bin-form">
                   <fieldset class="input">
-                    <label for="decInput">Decimal Number</label><br>
-                    <input type="text" id="decInput">
+                    <label for="decToBinInput">Decimal Number</label><br>
+                    <input type="text" id="decToBinInput">
                     <input type="submit" value="Convert">
                   </fieldset>
                   <fieldset class="output">
-                    <label for="BinOutput">Binary Number</label><br>
-                    <input type="text" id="binOutput" readonly="readonly"></input>
+                    <label for="decToBinOutput">Binary Number</label><br>
+                    <input type="text" id="decToBinOutput" readonly="readonly"></input>
                   </fieldset>
                 </form>
               </li>
             </ul>
-            
-
-
           </div>
         </div>
         <div class="col"></div>
       </div>
     </div>
+
+		
+		<!-- Hex and Decimal -->
+		<div class="converter-container">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col-sm-12 col-md-6">
+          <!-- Hex and Decimal Card-->
+          <div class="card converter-card">
+            <div class="card-header converter-header">
+              <h4 class="card-title">Hexadecimal and Decimal</h4>
+            </div>
+            <ul class="list-group list-group-flush">
+              <!-- Hex to Decimal-->
+              <li class="list-group-item converter-item">
+                <h5>Hexadecimal to Decimal</h5>
+                <form id="hex-to-dec-form">
+                  <fieldset class="input">
+                    <label for="hexToDecInput">Hex Number</label><br>
+                    <input type="text" id="hexToDecInput">
+                    <input type="submit" value="Convert">
+                  </fieldset>
+                  <fieldset class="output">
+                    <label for="hexToDecOutput">Decimal Number</label><br>
+                    <input type="text" id="hexToDecOutput" readonly="readonly"></input>
+                  </fieldset>
+                </form>
+              </li>
+
+              <!--Decimal to Hex-->
+              <li class="list-group-item converter-item">
+                <h5>Decimal to Hexadecimal</h5>
+                <form id="dec-to-hex-form">
+                  <fieldset class="input">
+                    <label for="decToHexInput">Decimal Number</label><br>
+                    <input type="text" id="decToHexInput">
+                    <input type="submit" value="Convert">
+                  </fieldset>
+                  <fieldset class="output">
+                    <label for="decToHexOutput">Hex Number</label><br>
+                    <input type="text" id="decToHexOutput" readonly="readonly"></input>
+                  </fieldset>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+				<div class="col"></div>
+			</div>
+		</div>
+
 
   </div>
   
