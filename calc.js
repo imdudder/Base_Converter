@@ -14,6 +14,14 @@ hexToDecForm.addEventListener('submit', hexToDecHandler);
 var decToHexForm = document.getElementById('dec-to-hex-form');
 decToHexForm.addEventListener('submit', decToHexHandler);
 
+// Binary to Hexadecimal Listener
+var binToHexForm = document.getElementById('bin-to-hex-form');
+binToHexForm.addEventListener('submit', binToHexHandler);
+
+// Hexadecimal to Binary Listener
+var hexToBinForm = document.getElementById('hex-to-bin-form');
+hexToBinForm.addEventListener('submit', hexToBinHandler);
+
 
 //===================== Binary to Decimal Section ====================
 function binToDecHandler(event) {
@@ -126,4 +134,38 @@ function decimalToHex(decVal) {
 		decVal = parseInt(decVal / 16);
 	}
 	return hexVal;
+}
+
+
+//===================== Binary to Hexadecimal Section ====================
+function binToHexHandler(event) {
+	var binToHexInput = document.getElementById('binToHexInput');
+	var binToHexOutput = document.getElementById('binToHexOutput');
+  if (binToHexInput.value) {
+		binToHexOutput.value = binaryToHex(parseInt(binToHexInput.value));
+  }
+	event.preventDefault();
+}
+
+function binaryToHex(binVal) {
+	var decVal = binaryToDecimal(binVal);
+	var hexVal = decimalToHex(decVal);
+	return hexVal;
+}
+
+
+//===================== Hexadecimal to Binary Section ====================
+function hexToBinHandler(event) {
+	var hexToBinInput = document.getElementById('hexToBinInput');
+	var hexToBinOutput = document.getElementById('hexToBinOutput');
+	if (hexToBinInput.value) {
+		hexToBinOutput.value = hexToBinary(String(hexToBinInput.value));
+  }
+	event.preventDefault();
+}
+
+function hexToBinary(hexVal) {
+	var decVal = hexToDecimal(hexVal);
+	var binVal = decimalToBinary(decVal);
+	return binVal;
 }

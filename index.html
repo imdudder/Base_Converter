@@ -131,6 +131,54 @@
 			</div>
 		</div>
 
+		<!-- Binary and Hex -->
+		<div class="converter-container">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col-sm-12 col-md-6">
+          <!-- Binary and Hex Card-->
+          <div class="card converter-card">
+            <div class="card-header converter-header">
+              <h4 class="card-title">Binary and Hexadecimal</h4>
+            </div>
+            <ul class="list-group list-group-flush">
+              <!-- Binary to Hex-->
+              <li class="list-group-item converter-item">
+                <h5>Binary to Hexadecimal</h5>
+                <form id="bin-to-hex-form">
+                  <fieldset class="input">
+                    <label for="binToHexInput">Binary Number</label><br>
+                    <input type="text" id="binToHexInput">
+                    <input type="submit" value="Convert">
+                  </fieldset>
+                  <fieldset class="output">
+                    <label for="binToHexOutput">Hexadecimal Number</label><br>
+                    <input type="text" id="binToHexOutput" readonly="readonly"></input>
+                  </fieldset>
+                </form>
+              </li>
+
+              <!--Hex to Binary-->
+              <li class="list-group-item converter-item">
+                <h5>Hexadecimal to Binary</h5>
+                <form id="hex-to-bin-form">
+                  <fieldset class="input">
+                    <label for="hexToBinInput">Hexadecimal Number</label><br>
+                    <input type="text" id="hexToBinInput">
+                    <input type="submit" value="Convert">
+                  </fieldset>
+                  <fieldset class="output">
+                    <label for="hexToBinOutput">Binary Number</label><br>
+                    <input type="text" id="hexToBinOutput" readonly="readonly"></input>
+                  </fieldset>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+				<div class="col"></div>
+			</div>
+		</div>
 
   </div>
   
