@@ -10,7 +10,7 @@
 }
 
 .topbar {
-  background-color: #1477B2;
+  background-color: #354259; 
   padding: 2rem;
 }
 
@@ -28,11 +28,11 @@ p.topbar-text {
 }
 
 .card-header.converter-header {
-  background-color: coral;
+  background-color: #C2DED1;  /*Options: #C2DED1, #A5BECC */
 }
 
 .converter-item {
-  background-color:#f6f6f6;
+  background-color:#f6f6f6; 
 }
 
 .bin-to-dec-form-container {
